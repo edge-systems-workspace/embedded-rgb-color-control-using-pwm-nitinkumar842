@@ -11,6 +11,7 @@
  */
 
 
+
 // TODO 1:
 #define RED_PIN 9
 
@@ -32,4 +33,40 @@ void setup() {
 
     // TODO 6:
     Serial.println("RGB LED System Initialized");
+}
+
+void loop() {
+
+    // -------- DIGITAL MODE --------
+
+    // TODO 7: Turn ON red
+    digitalWrite(RED_PIN, HIGH);
+    delay(1000);
+
+    // TODO 8: Turn OFF red
+    digitalWrite(RED_PIN, LOW);
+    delay(500);
+
+
+    // -------- ANALOG (PWM) MODE --------
+
+    // TODO 9: Set RED brightness
+    analogWrite(RED_PIN, 255);   // Full brightness
+
+    // TODO 10: Set GREEN brightness
+    analogWrite(GREEN_PIN, 0);   // Off
+
+    // TODO 11: Set BLUE brightness
+    analogWrite(BLUE_PIN, 0);    // Off
+
+    delay(1000);
+
+
+    // Change color to Purple
+    analogWrite(RED_PIN, 255);
+    analogWrite(GREEN_PIN, 0);
+    analogWrite(BLUE_PIN, 255);
+
+    // TODO 12:
+    delay(1000);
 }
