@@ -7,7 +7,7 @@
  *
  * @details
  * Controls RGB LED using digital ON/OFF
- * and analog PWM brightness control.
+ * and analog PWM brightness control
  */
 
  // TODO 1:
